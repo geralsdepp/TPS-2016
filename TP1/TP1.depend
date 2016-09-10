@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1473470236 source:j:\programación i\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"misFunciones.h"
+
+1473467897 j:\programación i\tp1\misfunciones.h
+	<stdio.h>
+
+1473475841 source:j:\programación i\tp1\misfunciones.c
+	"misFunciones.h"
+
