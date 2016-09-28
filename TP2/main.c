@@ -13,24 +13,25 @@ int main()
     Persona auxPersona;
 
     char auxNombre[50];
-    char auxDNI[20];
+    char auxDNI[50];
     int auxEdad;
     int aux2DNI;
     int i,j;
 
-
     int indiceLibre;
     int resultadoBusqueda;
 
-
+    char seguir='s';
     int opcion = 0;
+
 
     cargarPersonas(arrayPersonas,PERSONAS,-1);
 
-    while(opcion != 6)
+    while(seguir=='s')
     {
-        printf("1. Agregar una persona\n2. Borrar una persona.\n3. Imprimir lista ordenada por nombre.\n4. Imprimir gráfico de edades.\n");
+        printf("1. Agregar una persona\n2. Borrar una persona.\n3. Imprimir lista ordenada por nombre.\n4. Imprimir gráfico de edades.\n5.Salir.\n");
         scanf("%d",&opcion);
+
         switch(opcion)
         {
         case 1:
@@ -55,7 +56,7 @@ int main()
                 //asigno DNI
                 printf("Ingrese DNI:\n");
                 fflush(stdin);
-                scanf(" %s", auxDNI);
+                scanf("%s", auxDNI);
 
                 aux2DNI=atoi(auxDNI);
 
@@ -65,16 +66,16 @@ int main()
                     break;
                 }
 
-                arrayPersonas[indiceLibre].DNI=aux2DNI;
-                strcpy(arrayPersonas[indiceLibre].nombre, auxNombre);
-                arrayPersonas[indiceLibre].edad = auxEdad;
+                strcpy(arrayPersonas[indiceLibre].DNI,auxDNI);
+                strcpy(arrayPersonas[indiceLibre].nombre,auxNombre);
+                arrayPersonas[indiceLibre].edad=auxEdad;
 
             break;
 
         case 2:
             printf("Ingrese DNI a dar de baja:");
-            scanf("%s", auxDNI);
-            resultadoBusqueda=buscarLugarVacio(arrayPersonas,PERSONAS,atoi(auxDNI));
+            scanf("%d",&aux2DNI);
+            resultadoBusqueda=buscarLugarVacio(arrayPersonas,PERSONAS,atoi(aux2DNI));
 
             if(resultadoBusqueda==-1)
             {
@@ -109,35 +110,13 @@ int main()
             break;
 
         case 4:
-            mostrarGrafico(arrayPersonas);
             break;
-
-
-
+        case 5:
+            seguir = 'n';
+            break;
         }
+
     }
+
     return 0;
 }
-
-//int i;
-//int indiceLugarLibre;
-//
-//    struct Persona[20];
-//
-//
-//        if(indiceLugarLibre==-1)
-//        {
-//
-//        }
-
-//
-//    }
-//    //verifico que se garde en la posicion
-//    for(i=0;i<2;i++)
-//    {
-//        printf("%d ---> %d\n",i,Persona[i].edad);
-//    }
-//
-//
-//    return Persona[20];
-//}

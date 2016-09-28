@@ -8,5 +8,5 @@ typedef struct
 
 void cargarPersonas(Persona arrayPersonas[],int cantElement,int valor);
 int buscarLugarVacio(Persona arrayPersonas[],int cantElement,int valor);
-void mostrarGrafico(Persona arrayPersonas[]);
+
 /*************************************************************************/
