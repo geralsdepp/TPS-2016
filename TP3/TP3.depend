@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1477067562 source:c:\users\geraldine\desktop\tps\tp3\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
+1477073237 c:\users\geraldine\desktop\tps\tp3\tp3\misfunciones.h
+
+1477073392 source:c:\users\geraldine\desktop\tps\tp3\tp3\misfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
+1478920000 source:e:\tps\tp3\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
+1478920564 e:\tps\tp3\tp3\misfunciones.h
+
+1478920450 source:e:\tps\tp3\tp3\misfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
+1478844166 source:j:\tps\tp3\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
+1478847267 j:\tps\tp3\tp3\misfunciones.h
+
+1478846793 source:j:\tps\tp3\tp3\misfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"misFunciones.h"
+
